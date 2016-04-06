@@ -1,1 +1,5 @@
-{{outlet}}
+<h2>{{model.question}}</h2>
+<h4>Author: {{model.author}}</h4>
+<h5>Details: {{model.details}}</h5>
+<button {{action 'destroyQuestion' model}}>Delete</button>
+<hr>
