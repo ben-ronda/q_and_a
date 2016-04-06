@@ -2,17 +2,17 @@
   <form>
     <div class="form-group">
       <label for="question">Update Question:</label>
-      {{input value=question id="question" placeholder=question.question}}
+      {{input value=question.question id="question"}}
     </div>
     <div class="form-group">
       <label for="author">Update Author:</label>
-      {{input value=author id="author" placeholder=question.author}}
+      {{input value=question.author id="author"}}
     </div>
     <div class="form-group">
       <label for="details">Update Details:</label>
-      {{input value=details id="details" placeholder=question.details}}
+      {{input value=question.details id="details"}}
     </div>
-    <button {{action 'updateQuestion'}}>Save</button>
+    <button {{action 'updateQuestion' question}}>Save</button>
   </form>
 {{else}}
   <button {{action 'updatePostForm'}}>Update</button>
