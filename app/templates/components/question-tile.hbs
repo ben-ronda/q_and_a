@@ -1,3 +1,4 @@
-<li>
-  {{question.question}}
-</li>
+<div id="question">
+  {{#link-to 'question' question.id}}<h4>{{question.question}}</h4>{{/link-to}}
+  <h5>Author: {{question.author}}</h5>
+</div>
