@@ -1,1 +1,8 @@
-<li>{{answer.user}} said {{answer.response}}</li>
+<div class="">
+  <p>
+    {{answer.response}}
+  </p>
+  <h5>User: {{answer.user}}</h5>
+</div>
+<button class="btn btn-danger" {{action "deleteAnswer" answer}}>Delete</button>
+<hr>

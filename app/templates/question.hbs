@@ -5,9 +5,7 @@
 {{update-form updateQuestion="updateQuestion" question=model}}
 <hr>
 {{new-answer saveAnswer="saveAnswer" question=model}}
-
-<ul>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+<hr>
+{{#each model.answers as |answer|}}
+    {{answer-tile answer=answer deleteAnswer="deleteAnswer"}}
+{{/each}}
