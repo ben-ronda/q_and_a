@@ -16,7 +16,7 @@ export default Ember.Route.extend({
         }
       });
       question.save();
-      this.transitionTo('/question/:question_id');
+      this.transitionTo('question', question.id);
     },
     saveAnswer(answerParams) {
       var newAnswer = this.store.createRecord("answer", answerParams);
@@ -26,11 +26,11 @@ export default Ember.Route.extend({
       newAnswer.save().then(function(){
         return question.save();
       });
-      this.transitionTo('/question/:question_id');
+      this.transitionTo('question');
     },
     deleteAnswer(answer){
       answer.destroyRecord();
-      this.transitionTo("/question/:question_id");
+      this.transitionTo("question");
     }
   }
 });
