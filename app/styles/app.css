@@ -1,3 +1,13 @@
 #header {
   padding-left: 50px;
 }
+
+.glyphicon-star {
+  color: #FFE033;
+  text-shadow: 1px 1px black;
+}
+
+.glyphicon-fire {
+  color: #D62400;
+  text-shadow: 1px 1px black;
+}
