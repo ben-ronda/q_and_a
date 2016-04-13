@@ -20,9 +20,9 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
+* `git clone <repository-url>` this repository  
+* change into the new directory  
+* `npm install`  
 * `bower install`  
 
 * _Note: Depending on your how your machine is configured, you may need to run some of the above commands as SuperUser. Simply tag `sudo` to the beginning of command._
