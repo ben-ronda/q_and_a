@@ -33,8 +33,8 @@ export default Ember.Route.extend({
       this.transitionTo("question");
     },
     addFavorite(model){
-      var favorites = this.store.findRecord("question", model.favorites);
-      console.log(favorites);
+      var favorites = model.favorites;
+      console.log(model.favorites);
     }
   }
 });
