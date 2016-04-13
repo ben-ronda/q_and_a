@@ -31,6 +31,10 @@ export default Ember.Route.extend({
     deleteAnswer(answer){
       answer.destroyRecord();
       this.transitionTo("question");
+    },
+    addFavorite(model){
+      var favorites = this.store.findRecord("question", model.favorites);
+      console.log(favorites);
     }
   }
 });
