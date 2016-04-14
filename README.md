@@ -1,4 +1,4 @@
-# Question/Answer Forum
+# Question/Answer Forum [![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg?maxAge=2592000)]()
 
 This app was built using emberJS and allows a user to submit a question, answer questions, and favorite questions.
 
