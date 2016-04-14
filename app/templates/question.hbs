@@ -1,7 +1,6 @@
 <h2>{{model.question}}</h2>
 <h4>Author: {{model.author}}</h4>
 <h5>Details: {{model.details}}</h5>
-<button class=" btn glyphicon glyphicon-heart" {{action "addFavorite" model}} ></button>
 <br>
 <button  {{action 'destroyQuestion' model}}>Delete</button>
 {{update-form updateQuestion="updateQuestion" question=model}}

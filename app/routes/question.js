@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
@@ -31,10 +32,6 @@ export default Ember.Route.extend({
     deleteAnswer(answer){
       answer.destroyRecord();
       this.transitionTo("question");
-    },
-    addFavorite(model){
-      var favorites = model.favorites;
-      console.log(model.favorites);
     }
   }
 });
